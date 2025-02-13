@@ -1,16 +1,17 @@
-import Image from "next/image";
+'use client'
+
+import { useState } from "react";
 import styles from "./page.module.css";
 import Valentinks from "./valentinks";
-import ValentinksCopy from "./valentinksCopy";
 
 export default function Home() {
+  const [isValet, setIsValet] = useState(false);
 
   return (
     <div className={styles.block}>
-      <div className={styles.text2}>Від Андрія для Танюши<div className={styles.heart1}></div></div>
+      <div onClick={() => setIsValet(!isValet)} className={styles.text2}>Від 121_krakus_121<div className={styles.heart1}></div></div>
 
-      <Valentinks />
-      {/* <ValentinksCopy /> */}
+      {isValet ? (<Valentinks />) : null}
 
     </div >
 

@@ -23,7 +23,7 @@
 
 .text2 {
   color: #d62828;
-  font-size: 14px;
+  font-size: 22px;
   font-family: 'Pacifico', cursive;
   line-height: 1;
   text-align: center;
@@ -45,6 +45,7 @@
   bottom: 10px;
   left: auto;
   right: auto;
+  cursor: pointer;
 }
 
 
@@ -55,7 +56,7 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-image: url('/images/background.jpg');
+  background-image: url('/images/background3.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
@@ -98,6 +99,38 @@
 
 .heart1:after {
   left: 7.5px;
+  top: 0;
+}
+
+.heart2 {
+  background-color: #d62828;
+  display: inline-block;
+  height: 60px;
+  margin: 0 10px;
+  /* position: relative; */
+  top: 110px;
+  left: 105px;
+  transform: rotate(-45deg);
+  width: 60px;
+}
+
+.heart2:before,
+.heart2:after {
+  content: "";
+  background-color: #d62828;
+  border-radius: 50%;
+  height: 60px;
+  position: absolute;
+  width: 60px;
+}
+
+.heart2:before {
+  top: -30px;
+  left: 0;
+}
+
+.heart2:after {
+  left: 30px;
   top: 0;
 }
 
@@ -144,7 +177,7 @@
 .text {
   /* position: absolute; */
   font-family: 'Brush Script MT', cursive;
-  font-size: 26px;
+  font-size: 24px;
   text-align: center;
   line-height: 25px;
   margin-top: 20px;
@@ -157,7 +190,7 @@
 .text1 {
   /* position: absolute; */
   font-family: 'Brush Script MT', cursive;
-  font-size: 26px;
+  font-size: 24px;
   text-align: center;
   line-height: 25px;
   /* top: 50px; */
